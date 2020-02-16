@@ -21,3 +21,4 @@ class Memsource(object):
         self.language = api.Language(token, headers)
         self.analysis = api.Analysis(token, headers)
         self.term_base = api.TermBase(token, headers)
+        self.token = token
