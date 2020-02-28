@@ -470,6 +470,12 @@ class Job(BaseApi):
             'project': project_id
         })]
 
+    def listByProjectStatus(self, project_id: int, status: constants.JobStatus) -> List[models.JobPart]:
+        return [models.JobPart(job_part) for job_part in self._post('job/listByProject', {
+            'project': project_id,
+            'status': status
+        })]
+
     def preTranslate(self, job_parts: List[int]) -> None:
         """Request pre translate.
 
