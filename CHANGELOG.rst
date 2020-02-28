@@ -6,6 +6,13 @@ All notable changes to this project will be documented in this file. Dates are i
 Unreleased
 ==========
 
+[0.4.11] - 2020-02-28
+====================
+
+Added
+-----
+- Added job.listByProjectStatus function
+
 [0.4.10] - 2019-11-28
 ====================
 
